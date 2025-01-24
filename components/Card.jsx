@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { AppAssets } from "../app/constants/assets";
+import { AppAssets } from "../constants/assets";
 import Image from "next/image";
 
 

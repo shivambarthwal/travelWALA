@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { AppAssets } from "../app/constants/assets";
+import { AppAssets } from "../constants/assets";
 
 
 gsap.registerPlugin(ScrollTrigger);

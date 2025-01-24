@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import { AppAssets } from '../constants/assets';
+import { AppAssets } from '../../constants/assets';
 
 const blogs = [
   {
@@ -46,7 +46,6 @@ const blogs = [
     image: '/images/luxury-travel.jpg',
   },
 ];
-
 const Blogs = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
