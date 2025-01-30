@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
 import NextTopLoader from "nextjs-toploader";
 
 const geistSans = localFont({
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         <NextTopLoader color=" #FF0000" />
         <Navbar/>
         {children}
-         <Footer/>
+        <Footer/>
       </body>
     </html>
   );

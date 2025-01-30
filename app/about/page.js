@@ -3,16 +3,19 @@ import Image from "next/image";
 import React from "react";
 import { AppAssets } from "../../constants/assets";
 import { useRouter } from "next/navigation";
+import Ballpit from "../../components/Ballpit";
 
-function page() {
+function AboutUsPage() {
   const router = useRouter();
   const HandleAdventure = () => {
     router.push("/blog");
   };
+
   return (
     <>
-      <div className="min-h-screen bg-gray-50 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-gray-50 py-12 relative">
+        {/* Main Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Hero Section */}
           <div className="text-center">
             <h1 className="text-5xl font-extrabold text-gray-800 mb-6">
@@ -35,9 +38,7 @@ function page() {
               </h2>
               <p className="text-gray-600 mb-4">
                 At Travel Wanderlust, our mission is to inspire and empower
-                travelers to explore the world responsibly and sustainably. We
-                believe that travel is not just about visiting new places but
-                also about creating meaningful connections and memories.
+                travelers to explore the world responsibly and sustainably.
               </p>
               <p className="text-gray-600">
                 Whether you're a solo adventurer, a family on vacation, or a
@@ -62,7 +63,6 @@ function page() {
               Meet Our Team
             </h2>
             <div className="flex justify-center items-center w-96 border hover:border-black rounded-md mx-auto">
-              {/* Team Member 1 */}
               <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                 <Image
                   src={AppAssets.profile}
@@ -101,9 +101,14 @@ function page() {
             </button>
           </div>
         </div>
+
+        
+        <div className=" md:block hidden absolute z-20 bottom-0 left-0 w-full h-full overflow-hidden ">
+          <Ballpit count={100} gravity={0.6} friction={0.9} wallBounce={0.8} minSize={0.2} maxSize={0.8} followCursor={false} ambientColor={16777215} colors={[16711680, 65280, 255, 16776960, 65535, 16711935]} />
+        </div>
       </div>
     </>
   );
 }
 
-export default page;
+export default AboutUsPage;

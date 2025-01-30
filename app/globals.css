@@ -151,3 +151,17 @@
   margin: 0 10px;
   text-decoration: none;
 }
+
+
+body::-webkit-scrollbar,
+.CustomScroll::-webkit-scrollbar {
+  width: 4px;
+  background-color: #dbefe7;
+}
+
+body::-webkit-scrollbar-thumb,
+.CustomScroll::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  border-radius: 100vh;
+}

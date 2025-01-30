@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
 import { AppAssets } from '../../constants/assets';
+import SplashCursor from '../../components/SplashCursor';
 
 const blogs = [
   {
@@ -49,6 +50,7 @@ const blogs = [
 const Blogs = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
+      <SplashCursor/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl font-extrabold text-center text-gray-800 mb-10">
           Explore Our Latest Travel Blogs
@@ -57,7 +59,7 @@ const Blogs = () => {
           {blogs.map((blog) => (
             <div
               key={blog.slug}
-              className="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ease-in-out"
+              className="bg-white cursor-pointer rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ease-in-out"
             >
               <img
                  src={blog.image}

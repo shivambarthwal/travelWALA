@@ -11,14 +11,15 @@
   "dependencies": {
     "apexcharts": "^4.3.0",
     "axios": "^1.7.9",
-    "framer-motion": "^12.0.0",
+    "framer-motion": "^12.0.6",
     "gsap": "^3.12.7",
     "next": "15.0.4",
     "next-auth": "^4.24.11",
     "nextjs-toploader": "^3.7.15",
     "react": "^19.0.0",
     "react-apexcharts": "^1.7.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.172.0"
   },
   "devDependencies": {
     "@types/node": "22.10.2",

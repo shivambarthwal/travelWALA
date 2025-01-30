@@ -11,7 +11,7 @@ export default class IndexController {
       return data;
     } catch (error) {
       console.error("Error in API Call:", error);
-      throw error; // Optional: Propagate the error if necessary
+      throw error;
     }
   };
 }
