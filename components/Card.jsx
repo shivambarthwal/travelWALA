@@ -100,7 +100,7 @@ function Card() {
               Kerala
             </h3>
             <p className="text-gray-600">
-              God's own country with serene backwaters.
+              God&apos;s own country with serene backwaters.
             </p>
           </div>
 

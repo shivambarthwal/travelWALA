@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { AppAssets } from '../../constants/assets';
 import SplashCursor from '../../components/SplashCursor';
+import Image from 'next/image';
 
 const blogs = [
   {
@@ -61,7 +62,7 @@ const Blogs = () => {
               key={blog.slug}
               className="bg-white cursor-pointer rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 ease-in-out"
             >
-              <img
+              <Image
                  src={blog.image}
                 alt={blog.title}
                 className="w-full h-56 object-cover"
