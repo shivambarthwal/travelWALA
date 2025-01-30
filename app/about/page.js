@@ -22,11 +22,11 @@ function AboutUsPage() {
               About Us
             </h1>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Welcome to{" "}
+              Welcome to
               <span className="font-semibold text-blue-600">Travel Wale</span>,
               your ultimate guide to exploring the world. We are passionate
               about travel and dedicated to helping you discover the most
-              amazing destinations, hidden gems, and unforgettable experiences.
+              amazing destinations hidden gems and unforgettable experiences.
             </p>
           </div>
 
@@ -37,12 +37,12 @@ function AboutUsPage() {
                 Our Mission
               </h2>
               <p className="text-gray-600 mb-4">
-                At Travel Wanderlust, our mission is to inspire and empower
+                At Travel Wanderlust our mission is to inspire and empower
                 travelers to explore the world responsibly and sustainably.
               </p>
               <p className="text-gray-600">
-                Whether you're a solo adventurer, a family on vacation, or a
-                couple seeking a romantic getaway, we provide the tools, tips,
+                Whether you&apos;re a solo adventurer a family on vacation or a
+                couple seeking a romantic getaway we provide the tools tips
                 and inspiration to make your journey unforgettable.
               </p>
             </div>
@@ -91,7 +91,7 @@ function AboutUsPage() {
             </h2>
             <p className="text-white mb-6">
               Join us on this incredible journey and discover the best travel
-              tips, destinations, and experiences.
+              tips destinations and experiences.
             </p>
             <button
               onClick={HandleAdventure}
